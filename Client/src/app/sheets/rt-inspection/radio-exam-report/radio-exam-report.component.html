@@ -1,0 +1,502 @@
+<div class="container">
+
+    <div id="componentID">
+        <table style="width:100%;  height: 50px; border: 1px solid black;font-size: 20px;border-collapse: collapse;">
+            <tr>
+                <th rowspan="4" colspan="2" style="text-align: center; width:12.5%;"><img src="assets/vjp3.png"
+                        height="50" width="120"></th>
+                <td style="width: 62.5%; text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
+                    rowspan="4" colspan="6"><B> RADIOGRAPHIC EXAMINATION REPORT</B></td>
+                <td colspan="2" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    Doc.No
+                </td>
+                <td colspan="2" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    QA/RT/R/43</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    Rev.No</td>
+                <td colspan="2" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">01
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    Date
+                </td>
+                <td colspan="2" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    {{myDate | date: 'dd-MM-yyyy' }}</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    Page
+                    No</td>
+                <td colspan="2" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">1
+                    of
+                </td>
+            </tr>
+        </table>
+        <table style="width:100%;  height: 50px; border: 1px solid black;font-size: 18px;border-collapse: collapse;">
+            <tr>
+                <td style="width:12.5%;border: 1px solid black;border-collapse: collapse; text-align: center;">SFNo.
+                    162/2A 12, East Chennapachetty pudhur post,Padhuvampalli Village Coimbatore-641659.
+                </td>
+            </tr>
+            <tr>
+                <td style="width:12.5%;border: 1px solid black;border-collapse: collapse; text-align: center;">Ph: +91
+                    8870805777 &nbsp;&nbsp;&nbsp; E-mail: <a href="mailto: foundryquality@vjp.in">
+                        foundryquality@vjp.in</a> &nbsp;&nbsp;&nbsp; website: <a target="_blank"
+                        href="www.vjp.com">www.vjp.com</a>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; ">
+            <tr>
+                <th style="width: 25%; ">Customer : </th>
+                <td style="width: 25%; "> </td>
+                <th style="width: 25%; ">Report No : </th>
+                <td style="width: 25%; "> </td>
+
+            </tr>
+            <tr>
+                <td>Part Description</td>
+                <td></td>
+                <td>Technique Sheet No</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Material Grade</td>
+                <td></td>
+                <td>Radiography No</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Drawing No</td>
+                <td></td>
+                <td>Heat No</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Area Of Coverage</td>
+                <td></td>
+                <td>Internal Procedure No</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Source</td>
+                <td></td>
+                <td>Sketch Reference</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Strength</td>
+                <td></td>
+                <td>Evaluation Reference</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Focal Size in mm</td>
+                <td></td>
+                <td>Stage of Test</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Image Acquisition Medium</td>
+                <td></td>
+                <td>Shooting Technique</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>IQI</td>
+                <td></td>
+                <td>Procedure Reference</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Polority/Density</td>
+                <td></td>
+                <td>Acceptance Standard</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sensitivity</td>
+                <td></td>
+                <td>Pre - Filter's</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="height: 50px;">Notes</td>
+                <td colspan="3"></td>
+
+            </tr>
+
+
+        </table>
+        <table style="width:100%" class="vertical_head">
+            <thead style="text-align: center;">
+                <tr>
+                    <td rowspan="6" colspan="1" style="width:6.25%; text-align: center;">Location</td>
+                    <td rowspan="6" colspan="1" style="width:6.25%; text-align: center;">Thick(mm)</td>
+                    <td rowspan="6" colspan="1" style="width:6.25%; text-align: center;">kV&mA/Film Density</td>
+                    <td rowspan="6" colspan="1" style="width:6.25%; text-align: center;">IQI</td>
+                    <td rowspan="6" colspan="1" style="width:6.25%; text-align: center;">Image Coverage Area</td>
+                    <td colspan="9" style="width: 56.25%;">Findings & Classfication</td>
+                    <td rowspan="6" colspan="1" style="width: 6.25%; writing-mode: tb-lr;
+               ">Accepted (X)</td>
+                    <td rowspan="6" colspan="1" style="width: 6.25%; writing-mode: tb-lr;
+                ">Rejected (X)</td>
+                </tr>
+
+                <tr>
+                    <td colspan="1" style="width:6.25%;">A</td>
+                    <td colspan="1" style="width:6.25%;">GR</td>
+                    <td colspan="1" style="width:6.25%;">GE</td>
+                    <td colspan="1" style="width:6.25%;">BL</td>
+                    <td colspan="1" style="width:6.25%;">BM</td>
+                    <td colspan="1" style="width:6.25%;">CA</td>
+                    <td colspan="1" style="width:6.25%;">CB</td>
+                    <td colspan="1" style="width:6.25%;">D</td>
+                    <td colspan="1" style="width:6.25%;">BD</td>
+                </tr>
+                <tr >
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Gas Hole</td>
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Gas Porosity (Rounds)</td>
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Gas Porosity (Elongated)</td>
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Foreign Material Less Dence</td>
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Foreign Material More Dence</td>
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Shrinkage Cavity</td>
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Shrinkage Sponge</td>
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Cold Shut/ Crack</td>
+                    <td colspan="1" rowspan="4" style="width:6.25%; ">Surface Irregularity</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                    <td style="height: 50px;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 40px;" colspan="4">Total area Claimed for X-Ray </td>
+                    <td style="height: 40px;" colspan="4"></td>
+                    <td style="height: 40px;" colspan="4">Total No of image for X-Ray</td>
+                    <td style="height: 40px;" colspan="4"></td>
+                </tr>
+                <tr>
+                    <td style="height: 40px;" colspan="4">Casting confirms to severity level</td>
+                    <td style="height: 40px;" colspan="12"></td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="height: 40px;" colspan="4">Inspection personal </td>
+                    <td style="height: 40px;" colspan="4">Certification level</td>
+                    <td style="height: 40px;" colspan="4">Sign & Stamp</td>
+                    <td style="height: 40px;" colspan="4">Date of Exposure</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" colspan="4" style="height: 100px;"> </td>
+                    <td rowspan="3" colspan="4" style="height: 100px;"></td>
+                    <td rowspan="3" colspan="4" style="height: 100px;"></td>
+                    <td colspan="4" style="height: 40px;"></td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="4">Date of Interpretation</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" style="height: 40px;"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tr>
+
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-12 text-center p-4">
+        <button id="singlebutton" name="singlebutton" (click)="printPage()" class="btn btn-primary"> Print </button>
+    </div>
+
+</div>

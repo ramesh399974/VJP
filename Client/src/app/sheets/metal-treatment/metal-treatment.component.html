@@ -1,0 +1,562 @@
+<div class="container"  >
+
+    <div id="componentID">
+        <table style="width:100%;  height: 88px; border: 1px solid black;font-size: 20px;border-collapse: collapse;">
+            <tr>
+                <th rowspan="4" colspan="2" style="text-align: center; width:12.5%;"><img src="assets/vjp3.png"
+                        height="50" width="120"></th>
+                <td style="width: 62.5%; text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
+                    rowspan="4" colspan="6"><B>METAL TREATMENT AND OBSERVATION REPORT</B></td>
+                 <!-- <td colspan="1" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    DOC.NO
+                </td>
+                <td colspan="1" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    PROD/R/11</td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    REV.NO</td>
+                <td colspan="1" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">00
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    DATE
+                </td>
+                <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    {{myDate | date: 'dd-MM-yyyy' }}</td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    PAGE
+                    NO</td>
+                <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">1OF
+                </td>
+            </tr> 
+            <tr>
+                <td colspan="1">FURNACE NAME</td>
+                <th colspan="4" style="width: 30%;"></th>
+                <td colspan="1">FREQUENCY</td>
+                <th colspan="4"></th>
+            </tr>
+            <tr>
+                <td colspan="1">DATE</td>
+                <th colspan="4" style="width: 30%;"></th>
+                <td colspan="1">ROUTE CARD NO</td>
+                <th colspan="4">{{routeObj.cardNo}}</th>
+            </tr> -->
+                                        </table>
+                                        <table style="width:100%;">
+                                        <tr>
+                                            <td colspan="1" align="right" style="width:26%;">FURNACE NAME :</td>
+                                            <td colspan="2"style="width:26%;" >&nbsp;</td>
+                                            <td colspan="1" align="right">FREQUENCY :</td>
+                                            <td colspan="2">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" align="right">DATE :</td>
+                                            <td colspan="2">&nbsp;</td>
+                                            <td colspan="1" align="right">DOC NO :</td>
+                                            <td colspan="2" align="center">PROD/R/11</td>
+                                        </tr>
+                                    </table>
+        
+        <table>
+            <tr>
+                <th  colspan="1" rowspan="2" style="border-top:1px solid white;"><b>S/N</b></th>
+                <th  colspan="1" rowspan="2" style="text-align: center;border-top:1px solid white;">PART DESCRIPTION<b></b></th>
+                <th  colspan="1" rowspan="2" style="width: 10%;text-align: center ;border-top:1px solid white;"><b>MATERIAL GRADE</b> </th>
+                <th  colspan="1"  rowspan="2" style="width: 8.8%;text-align: center;border-top:1px solid white;"><b>CHARGE NO</b></th>
+                <th  colspan="1" rowspan="2" style="width: 5%;text-align: center;border-top:1px solid white;"><b>TIMING</b></th>
+                <th  colspan="1"  rowspan="2" style="width: 5%;text-align: center;border-top:1px solid white;"><b>COVERALL ADDITION (IN GRAMS)</b></th>
+
+                <th  colspan="3" style="text-align: center;border-top:1px solid white;"><b>DEGASSING</b></th>
+                <th rowspan="2"  colspan="1" style="border-top:1px solid white;"><b>DROSS REMOVING</b></th>
+                <th colspan="2" style="border-top:1px solid white;">POROSITY CHECK</th>
+                <th rowspan="2" colspan="1" style="border-top:1px solid white;"> K-MOULD</th>
+                <th rowspan="2" colspan="1" style="border-top:1px solid white;">DENSITY</th>
+                <th rowspan="2" colspan="1" style="border-top:1px solid white;">OPERATOR SIGN</th>
+                <th rowspan="2" colspan="1" style="border-top:1px solid white;">INCHARGE SIGN</th>
+                <th rowspan="2" colspan="1" style="border-top:1px solid white;">REMARKS</th>
+              </tr>
+              <tr>
+
+                <td><b>FLOW RATE (25-30 LPM)</b></td>
+                <td><b>ROTOR SPEED (400 RPM)</b></td>
+                <td style="width: 3%;"><b>NITROGEN GAS PRESSURE (0.5-1 BAR MIN)</b></td>
+                <td><b>1ST time</b></td>
+                <td><b>2ND time</b></td>
+              </tr>
+              <tr >
+                  <td style="padding-bottom: 20px;">1</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>8:00am-9:00am</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr >
+                <td style="padding-bottom: 20px;">2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>9:00am-10:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>10:00am-11:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>11:00am-12:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>12:00pm-1:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1:00pm-2:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2:00pm-3:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3:00pm-4:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">9</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4:00pm-5:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">10</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5:00pm-6:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">11</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>6:00pm-7:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">12</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>7:00pm-8:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">13</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>8:00pm-9:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">14</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>9:00pm-10:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>10:00pm-11:00pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">16</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>11:00pm-12:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">17</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>12:00am-1:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">18</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1:00am-2:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">19</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2:00am-3:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">20</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3:00am-4:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">21</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4:00am-5:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">22</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5:00am-6:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">23</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>6:00am-7:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 20px;">24</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>7:00am-8:00am</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+            <table style="width:100%;">
+                <td colspan="6"><b>ACCEPT<sub style="color:blue;">&#8594;</sub> &nbsp; A, REJECT<sub style="color:blue;">&#8594;</sub> &nbsp; R </b></td>
+             
+               <tr>
+                   <td style="text-align: center;" colspan="2">PREPARED BY</td>
+                   <td style="text-align: center;" colspan="2">VERIFIED BY</td>
+                   <td style="text-align: center;" colspan="2">APPROVED BY</td>
+               </tr>
+               <td style="height:2rem" colspan="6">&nbsp; Doc No: PROD/R/11 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rev.No: 00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Page No: 01 of 01</td>
+            </table>
+     </div>
+      <div class="col-md-12 text-center p-4">
+        <button id="singlebutton" name="singlebutton" (click)="printPage()" class="btn btn-primary"> Print </button>
+    </div>
+</div> 

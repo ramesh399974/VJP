@@ -1,0 +1,127 @@
+<app-navbar>
+    <h3 style=" color: white;">Inspection</h3>
+</app-navbar>
+
+
+<div style=" min-height: calc(100vh - 110px);">
+    <div style="width: 95%;margin-left: 3%;padding-top: 4.3%;">
+
+        <div>
+
+            <ng-container *ngIf="fircheck">
+                <mat-tab-group>
+                    <mat-tab label="M-FIR">
+
+                        <app-fir> </app-fir>
+                    </mat-tab>
+                    <mat-tab label="C-FIR">
+                        <app-c-fir></app-c-fir>
+                    </mat-tab>
+
+                    <!-- <mat-tab label="Final Inspection">
+                <app-predispatch></app-predispatch>
+                </mat-tab> -->
+
+                </mat-tab-group>
+            </ng-container>
+            <ng-container *ngIf="!fircheck">
+                <mat-tab-group>
+                    <mat-tab label="Drg Details ">
+                        <app-drg-details> </app-drg-details>
+                    </mat-tab>
+                    <mat-tab  *ngIf="type==1" label="In Process Inpection">
+                        <app-firstpart-print></app-firstpart-print>
+                        <!-- <app-firstpart></app-firstpart> -->
+                        <!-- <app-inprocess></app-inprocess> -->
+                     </mat-tab>
+                     <mat-tab *ngIf="type==2" label="FP Inpection">
+                        <app-inprocess></app-inprocess>
+                        <!-- <app-firstpart></app-firstpart> -->
+                        <!-- <app-inprocess></app-inprocess> -->
+                     </mat-tab>
+                    <mat-tab label="Periodic Inspection">
+                        <app-periodic></app-periodic>
+                    </mat-tab> 
+                    <!-- <mat-tab *ngIf="opnValue==70" label="Casting First Inspection">
+                        <app-casting-first></app-casting-first>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==40" label="Metal Treatment">
+                        <app-metal-treatment></app-metal-treatment>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==70" label="Die Startup">
+                        <app-die-startup></app-die-startup>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==70" label="Process Verification">
+                        <app-process-verification></app-process-verification>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==50" label="Molten Metal">
+                        <app-molten-metal></app-molten-metal>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==30" label="Metal Charging">
+                        <app-metal-charging></app-metal-charging>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==10" label="Ingot Fracture">
+                        <app-ingot-fracture></app-ingot-fracture>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==10" label="Inward Inspection">
+                        <app-inward-inspection></app-inward-inspection>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==70" label="Patrol Inspection">
+                        <app-patrol-inspection></app-patrol-inspection>
+                    </mat-tab> 
+                    <mat-tab *ngIf="opnValue==100 || opnValue==120" label="Heat Treatment Details">
+                        <app-heat-treatment-t6></app-heat-treatment-t6>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==140" label="Shot Blast Details">
+                        <app-shot-blast></app-shot-blast>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==80" label="Cutting Details">
+                        <app-shot-blast></app-shot-blast>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==90" label="Fettling Details">
+                        <app-shot-blast></app-shot-blast>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==110" label="Bend Removing Details">
+                        <app-shot-blast></app-shot-blast>
+                    </mat-tab>-->
+                     <mat-tab  *ngIf="opnValue==150" label="FPI Inspection">
+                        <app-fpi-inspection></app-fpi-inspection>
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==160" label="Radiographic Details">
+                        <app-radio-exam-report></app-radio-exam-report> 
+                    </mat-tab> 
+                    <mat-tab *ngIf="opnValue==160" label="Film Radiographic Details">
+                        <app-film-radio-exam-report></app-film-radio-exam-report> 
+                    </mat-tab> 
+                  <!--  <mat-tab *ngIf="opnValue==170"label="Final Inspection">
+                        <app-casting-final-inspection></app-casting-final-inspection>
+                    </mat-tab>
+                    
+                    <mat-tab *ngIf="opnValue==160" label="Calibration Details">
+                        <app-calibration-report></app-calibration-report> 
+                    </mat-tab> 
+                    <mat-tab *ngIf="opnValue==160" label="Periodic Calibration Details">
+                        <app-periodic-calibration-report></app-periodic-calibration-report> 
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==160" label="Developer Temperature Details">
+                        <app-developer-temperature-report></app-developer-temperature-report> 
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==160" label="X-Ray Processing Details">
+                        <app-x-ray-processing-report></app-x-ray-processing-report> 
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==160" label="RT Training Details">
+                        <app-rt-training-report></app-rt-training-report>  
+                    </mat-tab>
+                    <mat-tab *ngIf="opnValue==160" label="RT Logbook Details">
+                        <app-rt-logbook-report></app-rt-logbook-report>  
+                    </mat-tab> -->
+                </mat-tab-group>
+            </ng-container>
+
+
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

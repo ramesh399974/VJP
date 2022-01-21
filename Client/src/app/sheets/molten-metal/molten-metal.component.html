@@ -1,0 +1,260 @@
+
+
+<div class="container" >
+
+    <div id="componentID">
+        <table style="width:100%;  height: 50px; border: 0px solid black;font-size: 20px;border-collapse: collapse;">
+            <tr>
+                <th rowspan="4" colspan="1" style="text-align: center; width:12.5%;"><img src="assets/vjp3.png"
+                        height="50" width="120"></th>
+                <td style="width: 62.5%; text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
+                    rowspan="4" colspan="4"><B> MOLTEN METAL APPROVAL SLIP FOR POURING</B></td>
+                <td colspan="1" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    DOC.NO
+                </td>
+                <td colspan="4" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    QA/R/34</td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    REV.NO</td>
+                <td colspan="4" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">00
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    DATE
+                </td>
+                <td colspan="4" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    {{myDate | date: 'dd-MM-yyyy' }}</td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    PAGE
+                    NO</td>
+                <td colspan="4" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">1 OF 1
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">PART NAME</td>
+                <th colspan="1" style="width: 30%;"></th>
+                <!-- {{drgObject.partName}} -->
+                <td colspan="1">PART NUMBER</td>
+                <th colspan="7"></th>
+            </tr>
+            <tr>
+                <td colspan="1">DATE</td>
+                <th colspan="1" style="width: 30%;"></th>
+                <!-- {{routeObj.cardNo}} -->
+                <td colspan="1">CHANGE NUMBER</td>
+                <th colspan="7"></th>
+            </tr>
+            <tr>
+                <td colspan="1">MATERIAL GRADE</td>
+                <th colspan="1" style="width: 30%;"></th>
+                <!-- {{drgObject.materialGrade}} -->
+                <td colspan="1">VACCUM SAMPLE</td>
+                <th colspan="7"></th>
+            </tr>
+            <tr>
+                <td colspan="1">DEGASSING</td>
+                <th colspan="1" style="width:29.9%;"></th>
+                <td colspan="1">K-MOULD</td>
+                <th colspan="7"></th>
+            </tr>
+        
+
+        
+            <tr>
+                <td colspan="1" rowspan="2" style="border-top: 1px solid white;">DENSITY</td>
+                <th rowspan="2" colspan="1" style="border-top: 1px solid white;"></th>
+                <td colspan="2" rowspan="2"style="border-top: 1px solid white;" >JUDGEMENT</td>
+                <!-- <td style="width: 7%;text-align: center;border-top: 1px solid white;">OK</td>
+                <td style="text-align: center;border-top: 1px solid white;">NOT OK</td>
+                <td style="text-align: center;border-top: 1px solid white;">CA</td>
+ -->
+                <td  style="height:30px; width: 8%;"> OK</td>
+                <!-- rowspan="1" colspan="1" -->
+                <td  style=" width: 8%;"> NOT OK</td>
+                <!-- colspan="2" rowspan="1" -->
+                <td style=" width: 8%;"> CA</td>
+                <!-- colspan="4" rowspan="1"  -->
+                
+            </tr>
+            <tr>
+                <td  style="height:30px; width: 8%;" > </td>
+
+                <td  style="width:8%;"> </td>
+                <!-- colspan="1" rowspan="1" -->
+                <td style="width:8%;"> </td>
+                <!-- colspan="1" rowspan="1"  -->
+            </tr>
+            <!-- <tr style="text-align: center;">
+                <th style="height: 20px;"></th>
+                <th>
+
+                </th>
+                <th></th>
+            
+             </tr> -->
+            
+           <td style="height:7rem;" colspan="7">Remarks :
+            
+           </td>
+
+           <tr >
+            <td style="width: 20%;border-top: 1px solid white;" colspan="1">NOTE:</td>
+            <td style="border-top: 1px solid white;" colspan="1">CA - REQUIRED JUSTIFICATION</td>
+            <td style="border-top: 1px solid white;" colspan="5">LEGEND :OK-(&#10004;), &nbsp;&nbsp; Not Ok(&#10008;), &nbsp;&nbsp;CA-*</td>
+        </tr>
+        <tr style="height: 20%;">
+            <td style="width: 20%;border-top: 1px solid white;" colspan="1">&nbsp;</td>
+            <td style="border-top: 1px solid white;" colspan="1">&nbsp;</td>
+            <td style="border-top: 1px solid white;" colspan="5">&nbsp;</td>
+        </tr>
+        <tr style="height: 20%;">
+            <td align="center" style="width: 20%;border-top: 1px solid white;" colspan="1">Inprocess Inspector Name &Sign</td>
+            <td align="center" style="border-top: 1px solid white;" colspan="1">Shift Incharge Name & Sign	</td>
+            <td align="center" style="border-top: 1px solid white;" colspan="5">HOD - QA</td>
+        </tr>
+        
+        </table>
+        <!-- <table style="width:100%; margin-top:3px; ">
+            <tr>
+                <th colspan="24" style="padding-bottom: 60px;"><u>REMARKS:</u></th>
+            </tr>
+            </table> -->
+            <!-- <table style="width: 100%;">
+            <tr >
+                <td style="width: 20%;border-top: 1px solid white;">NOTE:</td>
+                <td style="border-top: 1px solid white;">CA - REQUIRED JUSTIFICATION</td>
+                <td style="border-top: 1px solid white;">LEGEND :OK-(&#10004;), &nbsp;&nbsp; Not Ok(&#10008;), &nbsp;&nbsp;CA-*</td>
+            </tr>
+            <tr style="height: 20%;">
+                <th style="padding-bottom: 20px;"></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr style="text-align: center;" >
+                <th>Inprocess Inspector Name &Sign	
+                </th>
+                <th>Shift Incharge Name & Sign			
+                </th>
+                <th>HOD - QA		
+                </th>
+            </tr>
+            </table>
+         -->
+         
+        
+            <!-- <table style="width:100%; margin-top: 25px; height: 50px; border: 1px solid black;font-size: 20px;border-collapse: collapse;">
+                <tr>
+                    <th rowspan="4" colspan="1" style="text-align: center; width:12.5%;"><img src="assets/vjp3.png"
+                            height="50" width="120"></th>
+                    <td style="width: 62.5%; text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
+                        rowspan="4" colspan="5"><B> MOLTEN METAL APPROVAL SLIP FOR POURING</B></td>
+                    <td colspan="1" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                        DOC.NO
+                    </td>
+                    <td colspan="1" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                        QA/R/42</td>
+                </tr>
+                <tr>
+                    <td colspan="1" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                        REV.NO</td>
+                    <td colspan="1" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">00
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                        DATE
+                    </td>
+                    <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                        {{myDate | date: 'dd-MM-yyyy' }}</td>
+                </tr>
+                <tr>
+                    <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                        PAGE
+                        NO</td>
+                    <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">1OF
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">PART NAME</td>
+                    <th colspan="4" style="width: 30%;">{{drgObject.partName}}</th>
+                    <td colspan="1">PART NUMBER</td>
+                    <th colspan="4"></th>
+                </tr>
+                <tr>
+                    <td colspan="1">ROUTE CARD NO</td>
+                    <th colspan="4" style="width: 30%;">{{routeObj.cardNo}}</th>
+                    <td colspan="1">CHANGE NUMBER</td>
+                    <th colspan="4"></th>
+                </tr>
+                <tr>
+                    <td colspan="1">MATERIAL GRADE</td>
+                    <th colspan="4" style="width: 30%;">{{drgObject.materialGrade}}</th>
+                    <td colspan="1">VACCUM SAMPLE</td>
+                    <th colspan="4"></th>
+                </tr>
+                <tr>
+                    <td colspan="1">DENSITY</td>
+                    <th colspan="4" style="width: 29.9%;"></th>
+                    <td colspan="1">K-MOULD</td>
+                    <th colspan="4"></th>
+                </tr>
+            </table>
+            <table style="width:100%;">
+                <tr>
+                    <td colspan="1" rowspan="2" style="width: 12.8%;border-top: 1px solid white;">DENSITY</td>
+                    <th rowspan="2" style="width: 29.8%;border-top: 1px solid white;"></th>
+                    <td colspan="1" rowspan="2"style="width: 32.5%;border-top: 1px solid white;" >JUDGEMENT</td>
+                    <td style="width: 7%;text-align: center;border-top: 1px solid white;">OK</td>
+                    <td style="text-align: center;border-top: 1px solid white;">NOT OK</td>
+                    <td style="text-align: center;border-top: 1px solid white;">CA</td>
+    
+                   
+                </tr>
+                <tr style="text-align: center;">
+                    <th style="height: 20px;"></th>
+                    <th>
+    
+                    </th>
+                    <th></th>
+                
+            </tr>
+                
+               
+            </table>
+            <table style="width:100%; margin-top:3px; ">
+                <tr>
+                    <th colspan="24" style="padding-bottom: 60px;"><u>REMARKS:</u></th>
+                </tr>
+                </table>
+                <table style="width: 100%;">
+                <tr>
+                    <td style="width: 20%;border-top: 1px solid white;">NOTE:</td>
+                    <td style="border-top: 1px solid white;">CA - REQUIRED JUSTIFICATION</td>
+                    <td style="border-top: 1px solid white;">LEGEND :OK-(&#10004;), &nbsp;&nbsp; Not Ok(&#10008;), &nbsp;&nbsp;CA-*</td>
+                </tr>
+                <tr style="height: 20%;">
+                    <th style="padding-bottom: 20px;"></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr style="text-align: center;" >
+                    <th>Inprocess Inspector Name &Sign	
+                    </th>
+                    <th>Shift Incharge Name & Sign			
+                    </th>
+                    <th>HOD - QA		
+                    </th>
+                </tr>
+                </table> -->
+</div>
+        
+
+        <div class="col-md-12 text-center p-4">
+            <button id="singlebutton" name="singlebutton" (click)="printPage()" class="btn btn-primary"> Print </button>
+        </div>
+</div>

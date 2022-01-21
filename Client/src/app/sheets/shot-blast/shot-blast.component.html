@@ -1,0 +1,85 @@
+<div class="container">
+    <div id="componentID">
+        <table style="width:100%;  height: 50px; border: 1px solid black;font-size: 20px;border-collapse: collapse;">
+            <tr>
+                <th rowspan="4" colspan="2" style="text-align: center; width:12.5%;"><img src="assets/vjp3.png"
+                        height="50" width="120"></th>
+                <td style="width: 81.5%; text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
+                    rowspan="4" colspan="11"><B> {{title}} </B></td>
+            </tr>
+        </table>
+        <table class="text_for" style="width: 100%;">
+            <tr *ngIf="opnValue==90 || opnValue==110 || opnValue==140">
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1" style="width: 5.6%;"></td>
+                <td colspan="1" *ngIf="opnValue==140 || opnValue==110 || opnValue==80"></td>
+                <td colspan="1" *ngIf="opnValue==90"></td>
+                <td colspan="1"></td>
+                <!-- <td colspan="1" *ngIf="opnValue==140 || opnValue==110 "></td> -->
+                <td colspan="1" *ngIf="opnValue==80 "></td>
+                <td colspan="1" *ngIf="opnValue==80 "></td>
+                <td colspan="1" *ngIf="opnValue==80 "></td>
+                <td colspan="2">Total Tonnage</td>
+                <td colspan="1" *ngIf="opnValue==80 "></td>
+                <td colspan="1" *ngIf="opnValue==90 || opnValue==140 ">0</td>
+                <td colspan="1" *ngIf="opnValue==90 || opnValue==140">0</td>
+                <td colspan="1" *ngIf="opnValue==110 "></td>
+                <td colspan="1" *ngIf="opnValue==110 "></td>
+                <td colspan="1" *ngIf="opnValue==80 "></td>
+                <td colspan="1" *ngIf="opnValue==90 || opnValue==140 ">0</td>
+                <td colspan="1" *ngIf="opnValue==90 || opnValue==140 ">0</td>
+                <td colspan="1" *ngIf="opnValue==110 "></td>
+                <td colspan="1" *ngIf="opnValue==110 "></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td colspan="1">S.No.</td>
+                <td colspan="1">Date</td>
+                <td colspan="1" style="width: 5.6%;">Shit</td>
+                <td colspan="1" *ngIf="opnValue==80">MC No.</td>
+                <td colspan="1" *ngIf="opnValue==140 || opnValue==110 || opnValue==80">Operator Name</td>
+                <td colspan="1" *ngIf="opnValue==90">Contractor Name</td>
+                <td colspan="1">Part Name</td>
+                <td colspan="1" *ngIf="opnValue==140 || opnValue==110 ">Cycle Time</td>
+                <td colspan="1" *ngIf="opnValue==80 ">Cycle Time (Mins)</td>
+                <td colspan="1" *ngIf="opnValue==80 ">Grade</td>
+                <td colspan="1" *ngIf="opnValue==80 ">WRRW</td>
+                <td colspan="1">Part Weight</td>
+                <td colspan="1" *ngIf="opnValue==80 ">RRW</td>
+                <td colspan="1" *ngIf="opnValue==90 ">Process</td>
+                <td colspan="1">Plan Quantity</td>
+                <td colspan="1">Actual Quantity</td>
+                <td colspan="1" *ngIf="opnValue==80 ">TRRW</td>
+                <td colspan="1">Plan Weight</td>
+                <td colspan="1">Actual Weight</td>
+                <td colspan="1">EFF%</td>
+                <td colspan="1">Remarks</td>
+            </tr>
+            <tr *ngFor="let i of arr" style="height: 20px;">
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1" style="width: 5.6%;"></td>
+                <td colspan="1" *ngIf="opnValue==80"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"  *ngIf="opnValue==80 " ></td>
+                <td colspan="1"  *ngIf="opnValue==80 "></td>
+                <td colspan="1"></td>
+                <td colspan="1"  *ngIf="opnValue==80 "></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"  *ngIf="opnValue==80 "></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="col-md-12 text-center p-4">
+    <button id="singlebutton" name="singlebutton" (click)="printPage()" class="btn btn-primary"> Print </button>
+</div>

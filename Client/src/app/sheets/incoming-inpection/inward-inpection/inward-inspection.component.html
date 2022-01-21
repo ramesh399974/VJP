@@ -1,0 +1,679 @@
+
+    <div class="container" >
+        <div id="componentID">
+            <table style="width:100%;  height: 50px; border: 1px solid black;font-size: 20px;border-collapse: collapse;">
+                <tr>
+                  <th rowspan="5" colspan="2" style="text-align: center; width:12.5%;"><img src="assets/vjp3.png"
+                      height="50" width="120"></th>
+                  <td
+                    style="width: 62.5%; text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
+                    rowspan="5" colspan="10"><B> INWARD INSPECTION REPORT</B></td>
+                  <td colspan="1" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    DOC.NO
+                  </td>
+                  <td colspan="2" style="width:12.5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    QA/R/18</td>
+                </tr>
+                <tr>
+                  <td colspan="1" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    REV.NO</td>
+                  <td colspan="2" style="width:12.5%;border: 1px solid black; border-collapse: collapse; padding: 2px;">03
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">DATE
+                  </td>
+                  <td colspan="2" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">
+                    {{myDate | date: 'dd-MM-yyyy' }}</td>
+                </tr>
+                <tr>
+                  <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">PAGE
+                    NO</td>
+                  <td colspan="2" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">1OF
+                  </td>
+                </tr>
+                <tr>
+                    <!-- <td colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">ROUTE CARD
+                      NO</td>
+                    <th colspan="1" style="width:12.5%;border: 1px solid black;border-collapse: collapse; padding: 2px;">{{routeObj.cardNo}}
+                    </th> -->
+                  </tr>
+              
+                  <tr style="height: 2rem;">
+                    <td></td>
+                    <td colspan="2">Part Name</td>
+                    <td colspan="3">:</td>
+                    <td></td>
+                    <td>DC. No.</td>
+                    <td></td>
+                    <td colspan="2">:</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                    </tr>
+                  <tr style="height: 2rem;width:5%;  border: 1px solid black; border-collapse: collapse; padding: 2px;">
+                    <td></td>
+                    <td colspan="2">Drg. NO. /Rev.</td>
+                    <td colspan="3">:</td>
+                    <td></td>
+                    <td>Lot Qty</td>
+                    <td></td>
+                    <td colspan="2">:</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                  </tr>  
+                  <tr style="height: 2rem;">
+                    <td></td>
+                    <td colspan="2" >Material Grade</td>
+                    <td>:</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">Sample Size</td>
+                    <!-- <td></td> -->
+                    <td colspan="2">:</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td> 
+                </tr>
+                  <tr  style="height: 2rem;">
+                    <td></td>
+                    <td colspan="2">Unit of Measurement</td>
+                    <td>: MM/INCH</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">Supplier Name</td>
+                    <!-- <td></td> -->
+                    <td colspan="2">:</td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <!-- <td colspan="2"></td> -->
+                </tr>
+                  <tr style="height: 2rem;">
+                    <td></td>
+                    <td colspan="2">Operation</td>
+                    <td >:</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">Heat No</td>
+                    <!-- <td></td> -->
+                    <td colspan="2">:</td>
+                    <td></td>
+                    <td></td>
+                    
+                    <td colspan="2"></td>
+                  </tr>
+                    
+                <tr style="height: 2rem;">
+                    <td style="width:5%;">Sr.No</td>
+                    <td colspan="1">Drg.Sr.No.</td>
+                    <td colspan="1">Description</td>
+                    <td colspan="1">Specs.</td>
+                    <td colspan="1">min</td>
+                    <td colspan="1">max</td>
+                    <td colspan="1">Measuring Technique</td>
+                    <td style="width:5%;">1</td>
+                    <td style="width:5%;">2</td>
+                    <td style="width:5%;">3</td>
+                    <td style="width:5%;">4</td>
+                    <td style="width:5%;">5</td>
+                    <td colspan="2"><u>Remark</u></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>13</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>14</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>17</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>18</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>19</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>20</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>22</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>24</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>25</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>26</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>27</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>28</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>29</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                
+                    <td colspan="14" style="height: 7rem;">Remarks :</td>
+                   
+                <tr style="height: 4rem;">
+                    <td colspan="14"> Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">ACCEPTED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">C/A ACCEPTED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">REJECTED
+                </td>
+                </tr>
+                <tr>
+                    <td  style="text-align: center;" colspan="8"><b>Change History</b></td>
+                    <td rowspan="6" colspan="2"></td>
+                    <td rowspan="6" colspan="2"></td>
+                    <td rowspan="6" colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td>.</td>
+                    <td></td>
+                    <td colspan="2"> </td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr style="height: 2rem;">
+                    <td ></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>01</td>
+                <td>25.12.2019</td>
+                    <td colspan="2">REVISION HISTORY ADDED</td>
+                    <td colspan="2">PREMANANDH.C</td>
+                </tr>
+                <tr>
+                    <td>00</td>
+                    <td>10.12.2018</td>
+                    <td colspan="2">INITIAL RELEASE</td>
+                    <td colspan="2">PREMANANDH.C</td>
+                </tr>
+                <tr>
+                    <td>REV NO</td>
+                    <td>DATE</td>
+                    <td colspan="2">DESCRIPTION</td>
+                    <td colspan="2">SIGN</td>
+                    <td colspan="3">PREPARED BY</td>
+                    <td colspan="3">VERIFIED BY</td>
+                    <td colspan="3">APPROVED BY</td>
+                    <!-- <td></td> -->
+                </tr>
+                
+    
+                <!-- <tr>
+                    <td>CASTING DRAWING NO/REV</td>
+                    <th>{{drgObject.partNum}}</th>
+                    <th>{{drgObject.revNo}}</th>
+                    <td colspan="2">MACHINING DRAWING NO/REV</td>
+                    <th>{{drgObject.partNum1}}</th>
+                    <th>{{drgObject.revNo1}}</th>
+                    <td>BATCH QUANTITY</td>
+                    <th colspan="1">{{routeObj.qty}}</th>
+    
+    
+    
+    
+    
+                </tr>
+    
+                <tr>
+                    <td>OPERATION DESCRIPTION</td>
+                    <th>{{psObject.description | uppercase}}</th>
+                    <td>WORK CENTER / MACHINE NAME</td>
+                    <th colspan="2">{{psObject.workCenter}} / {{machine}}</th>
+                    <td>PROCESS PLAN NO</td>
+                    <th>{{qpaObject.pfNo}}</th>
+                    <td>QUALITY PLAN NO </td>
+                    <th>{{qpaObject.qpNo}}</th>
+    
+                </tr>
+                <tr>
+    
+                    <td>CASTING TOLERANCE</td>
+                    <th >{{drgObject.castingToleranceStandard | uppercase}}</th>
+                    <td>MACHINING TOLERANCE</td>
+                    <th colspan="2">{{drgObject. machiningToleranceStandard | uppercase}}</th>
+                    <td>MATERIAL GRADE</td>
+                    <th>{{drgObject.materialGrade}}</th>
+                    <td>MATERIAL WEIGHT</td>
+                    <th>{{drgObject.materialWeight}}</th>
+    
+    
+    
+                </tr>
+    
+    
+                <tr>
+    
+    
+                    <td>PURCHASE ORDER NUMBER</td>
+                    <th colspan="2">{{marketData.poNo}}</th>
+                    <td colspan="2">INSPECTION DATE</td>
+                    <th colspan="5"></th>
+    
+                </tr> -->
+    
+    
+            </table>
+
+
+    
+        </div>
+        <div class="col-md-12 text-center p-4">
+            <button id="singlebutton" name="singlebutton" (click)="printPage()" class="btn btn-primary"> Print </button>
+        </div>
+    
+    </div>
