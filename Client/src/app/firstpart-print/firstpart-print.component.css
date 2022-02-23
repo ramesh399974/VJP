@@ -282,3 +282,13 @@ td {
 .leftBorder {
   border-top-color: transparent;
 }
+tr.noBorder td {
+  border: 0;
+  height: 30px;
+}
+.tb{
+  border-color: #ccc;
+}
+.tb th,td{
+  border-color: #ccc;
+}

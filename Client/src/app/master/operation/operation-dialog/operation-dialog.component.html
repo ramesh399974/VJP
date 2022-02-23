@@ -21,6 +21,19 @@
                 <mat-error>Process Name is required!</mat-error>
             </mat-form-field>
         </div>
+        <div class="row">
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Process Type</mat-label>
+                <mat-select formControlName="type">
+                    <mat-option *ngFor="let ptype of processtypelist" [value]="ptype.id">
+                        {{ptype.name}}
+                    </mat-option>
+
+                </mat-select>
+            </mat-form-field>
+
+        </div>
 
     </form>
 

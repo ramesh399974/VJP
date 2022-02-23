@@ -23,7 +23,7 @@ export class OperationListComponent implements OnInit {
   confirmDialogRef: any;
   displayedColumns: any;
 
-
+ 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
 

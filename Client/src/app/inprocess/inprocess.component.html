@@ -10,7 +10,7 @@
                     height="50" width="120"></th>
                 <td
                   style=" text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
-                  rowspan="4" colspan="6"><B> FIRST PIECE INSPECTION REPORT</B></td>
+                  rowspan="4" colspan="6"><B> FIRST PART / INPROCESS INSPECTION REPORT</B></td>
                 <td colspan="1" style="  border: 1px solid black; border-collapse: collapse; padding: 2px;">
                   DOC.NO
                 </td>
@@ -43,8 +43,8 @@
                 <th colspan="2">{{drgObject.partName | uppercase}}</th>
                 <td colspan="1">OPERATION NO.</td>
                 <th colspan="1">{{psObject.opnNo}}</th>
-                <th colspan="1">ROUTE CARD NUMBER</th>
-                <th colspan="1">{{routeObj.cardNo}}</th>
+                <th colspan="1">WORK ORDER NUMBER</th>
+                <th colspan="1"></th>
               </tr>
   
               <tr>
@@ -93,7 +93,20 @@
   
   
               </tr>
+              <tr>
   
+                <td>CUSTOMER NAME</td>
+                <th ></th>
+                <td>HEAT NO./CHARGE NO.</td>
+                <th colspan="2"></th>
+                <td>UNIT OF MEASURMENT</td>
+                <th>{{drgObject.measurementUnit}}</th>
+                <td>ROUTE CARD NUMBER</td>
+                <th colspan="1">{{routeObj.cardNo}}</th>
+  
+  
+  
+              </tr>
   
               <tr>
   
@@ -245,6 +258,32 @@
                     <td></td>
                     <td></td>
                   </tr>
+                </table>
+                <table class="tb" style="width: 100%;   ">
+                  <tr class="noBorder">
+                    <td  colspan="13"  >Remarks:-</td> 
+                    
+                </tr>
+                <tr  class="noBorder">
+                    <td colspan="13" ></td>
+                </tr>
+                  <tr >
+  
+                    <td colspan="13">Status
+                        <input type="checkbox" style="margin-left: 200px;" id="status1" name="accept" value="accept">
+                        &nbsp;&nbsp;<label for="status1"> ACCEPTED</label>
+                        <input type="checkbox" style="margin-left: 100px;" id="status2" name="caaccept" value="caaccept">
+                        &nbsp;&nbsp;<label for="status1"> C/A ACCEPTED</label>
+                        <input type="checkbox" style="margin-left: 100px;" id="status3" name="reject" value="reject">
+                        &nbsp;&nbsp;<label for="status3"> REJECTED</label>
+                    </td>
+                </tr>
+                <tr >
+                    <td  colspan="3">Inspected By</td>
+                    <td style=" width: 25%;"></td>
+                    <td colspan="3">Approved By</td>
+                    <td style=" width: 25%;"></td>
+                </tr>
                 </table>
               </div>
   

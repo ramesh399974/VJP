@@ -118,7 +118,7 @@
                       <td>{{j+1}}</td>
                       <td *ngFor="let col1 of item.headers1[val]" class="bor">
                         <ng-container *ngIf="col1 == 'instrument'; else noImg" class="nnew">
-                          <img src="http://192.168.43.120:80/vjp/instrument/{{subItem.Instrument.insImage}}"
+                          <img src="http://localhost:80/VJP-Quality-Module/uploads/instrument/{{subItem.Instrument.insImage}}"
                             style="width: 60px;height: 30px;">
                         </ng-container>
                         <ng-template #noImg class="bor">
@@ -166,7 +166,7 @@
                         <td>{{j+1}}</td>
                         <td *ngFor="let col1 of item.headers1[val]" class="bor">
                           <ng-container *ngIf="col1 == 'instrument'; else noImg" class="nnew">
-                            <img src="http://192.168.43.120:80/vjp/instrument/{{subItem.Instrument.insImage}}"
+                            <img src="http://localhost:80/VJP-Quality-Module/uploads/instrument/{{subItem.Instrument.insImage}}"
                               style="width: 60px;height: 30px;">
                           </ng-container>
 

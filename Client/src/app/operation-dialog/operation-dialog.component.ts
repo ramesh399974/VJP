@@ -19,13 +19,13 @@ export class OperationDialogComponent {
   viewdata: any
   editId: any;
   workData: any;
-  Oplist: any;
+  Oplist: any=[];
   type: any;
   processData: any;
   productData: any;
   incomingData: any;
 
-  processtypelist=[{id: "1",name:'Casting'},{id:"2",name:'Machining'},{id:"3",name:'Assembly'}];
+ 
 
   private IMG_URL = environment.IMG_URL;
 
@@ -49,13 +49,14 @@ export class OperationDialogComponent {
     incomingSource: ['', Validators.required],
     processCharacteristics: ['', Validators.required],
     productCharacteristics: ['', Validators.required],
-    process_type:['',Validators.required],
+    
 
     uploadImage1: ['', Validators.required],
     uploadImage2: ['', Validators.required],
     uploadImage3: ['', Validators.required],
     uploadImage4: ['', Validators.required],
   });
+  opnType: any;
 
  
 
@@ -92,7 +93,7 @@ export class OperationDialogComponent {
         processCharacteristics: _data.data.processCharacteristics,
         productCharacteristics: _data.data.productCharacteristics,
         type: _data.data.type,
-        process_type:_data.data.type,
+        process_type:_data.data.type, 
 
         uploadImage1: _data.data.image1,
         uploadImage2: _data.data.image2,
@@ -120,6 +121,11 @@ export class OperationDialogComponent {
 
     step1.drgId = localStorage.getItem('DrgCode');
     step1.opNo = localStorage.getItem('opnNo');
+    let index = this.Oplist.findIndex(x=> x.name==step1.opnName);
+    if(index!==-1){
+      this.opnType = this.Oplist[index].type;
+      console.log(this.opnType);
+    }
 
     const formData = new FormData();
     formData.append('fileKey1', this.uploadfile1, this.uploadfile1.name);
@@ -138,7 +144,7 @@ export class OperationDialogComponent {
     formData.append('incomingSource', step1.incomingSource);
     formData.append('processCharacteristics', step1.processCharacteristics);
     formData.append('productCharacteristics', step1.productCharacteristics);
-    formData.append('type', step1.process_type);
+    formData.append('type', this.opnType);
 
     if (this.type == 'altpro') {
       step1.altProcess = 1;
@@ -196,6 +202,11 @@ export class OperationDialogComponent {
     step1.qpId = localStorage.getItem('qpid');
     step1.drgId = localStorage.getItem('DrgCode');
 
+    let index = this.Oplist.findIndex(x=> x.name==step1.opnName);
+    if(index!==-1){
+      this.opnType = this.Oplist[index].type;
+      console.log(this.opnType);
+    }
 
     const formData = new FormData();
 
@@ -241,7 +252,7 @@ export class OperationDialogComponent {
     formData.append('incomingSource', step1.incomingSource);
     formData.append('processCharacteristics', step1.processCharacteristics);
     formData.append('productCharacteristics', step1.productCharacteristics);
-    formData.append('type', step1.process_type);
+    formData.append('type', this.opnType);
 
 
     this._operationservice.updateOperation(editId, formData).subscribe((res: any) => {

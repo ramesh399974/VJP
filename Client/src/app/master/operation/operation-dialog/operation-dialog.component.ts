@@ -16,7 +16,7 @@ export class OperationDialogComponent1  {
   dialogTitle: string;
   viewdata: any
   editId: any;
-
+  processtypelist=[{id: 1,name:'Casting'},{id:2,name:'Machining'},{id:3,name:'Assembly'}];
 
   constructor(
     public matDialogRef: MatDialogRef<OperationDialogComponent1>,
@@ -34,7 +34,7 @@ export class OperationDialogComponent1  {
 
       this.contactForm.patchValue({
         name: _data.data.name,
-        
+        type: _data.data.type
       });
     }
     else {
@@ -101,6 +101,7 @@ export class OperationDialogComponent1  {
 
   contactForm = this._formBuilder.group({
     name: ['', Validators.required],
+    type:['',Validators.required]
   });
 
 

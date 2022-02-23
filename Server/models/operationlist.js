@@ -13,6 +13,10 @@ module.exports = function(sequelize, DataTypes) {
             field:'name',
             allowNull: false
 
+        },
+        type:{
+            type:DataTypes.INTEGER(20),
+            field:'type',
         }
     },
     {

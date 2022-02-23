@@ -112,6 +112,10 @@ export class FirstpartPrintComponent implements OnInit {
 td{
     text-align: left;
 }
+tr.noBorder td {
+  border: 0;
+  height: 30px;
+}
  </style>`);
 
 setTimeout(function() {

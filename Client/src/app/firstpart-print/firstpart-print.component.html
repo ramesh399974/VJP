@@ -10,7 +10,7 @@
                   height="50" width="120"></th>
               <td
                 style=" text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
-                rowspan="4" colspan="6"><B> INPROCESS INPECTION REPORT</B></td>
+                rowspan="4" colspan="6"><B> FIRST PART / INPROCESS INSPECTION REPORT</B></td>
               <td colspan="1" style="  border: 1px solid black; border-collapse: collapse; padding: 2px;">
                 DOC.NO
               </td>
@@ -37,40 +37,86 @@
             </tr>
           
             <tr>
-              <td colspan="1">Customer Name</td>
-              <th colspan="3" style="width: 25%;"></th>
-              <td colspan="3">Work Order Number</td>
-              <th colspan="2"></th>
+              <td colspan="1">DRAWING CODE</td>
+              <th colspan="1">{{drgObject.id}}</th>
+              <td colspan="1">PART NAME</td>
+              <th colspan="2">{{drgObject.partName | uppercase}}</th>
+              <td colspan="1">OPERATION NO.</td>
+              <th colspan="1">{{psObject.opnNo}}</th>
+              <th colspan="1">WORK ORDER NUMBER</th>
+              <th colspan="1"></th>
             </tr>
 
             <tr>
-              <td colspan="1">Part Name</td>
-              <th colspan="3" style="width: 25%;"></th>
-              <td colspan="3">Inspection Date / Shift</td>
-              <th colspan="2"></th>
+              <td>CASTING DRAWING NO/REV</td>
+              <th>{{drgObject.partNum}}</th>
+              <th>{{drgObject.revNo}}</th>
+              <td colspan="2">MACHINING DRAWING NO/REV</td>
+              <th>{{drgObject.partNum1}}</th>
+              <th>{{drgObject.revNo1}}</th>
+
+              <td>BATCH QUANTITY</td>
+              <th>{{routeObj.qty}}</th>
+
+
+
             </tr>
 
             <tr>
-              <td colspan="1">Drg. No. / Rev.</td>
-              <th colspan="3" style="width: 25%;"></th>
-              <td colspan="3">Opearation Descriptior</td>
-              <th colspan="2"></th>
+              <td>OPERATION DESCRIPTION</td>
+              <th>{{psObject.description | uppercase}}</th>
+              <td>WORK CENTER</td>
+              <th colspan="2">{{psObject.workCenter}}</th>
+              <td>PROCESS PLAN NO</td>
+              <th>{{qpaObject.pfNo}}</th>
+              <td>QUALITY PLAN NO</td>
+              <th>{{qpaObject.qpNo}}</th>
+
+
+
+
+
+
             </tr>
             <tr>
 
-              <td colspan="1">Unit of Measurement</td>
-              <th colspan="3" style="width: 25%;"></th>
-              <td colspan="3">Process Plan No.</td>
-              <th colspan="2"></th>
+              <td>CASTING TOLERANCE</td>
+              <th >{{drgObject.castingToleranceStandard | uppercase}}</th>
+              <td>MACHINING TOLERANCE</td>
+              <th colspan="2">{{drgObject. machiningToleranceStandard | uppercase}}</th>
+              <td>MATERIAL GRADE</td>
+              <th>{{drgObject.materialGrade}}</th>
+
+              <td>MATERIAL WEIGHT</td>
+              <th>{{drgObject.materialWeight}}</th>
+
+
+
             </tr>
             <tr>
-              <td colspan="1" >Heat No. / Charge No.</td>
-              <th colspan="3" style="width: 25%;"></th>
-              <td colspan="3">Quality Plan No.</td>
+
+              <td>CUSTOMER NAME</td>
+              <th ></th>
+              <td>HEAT NO./CHARGE NO.</td>
               <th colspan="2"></th>
+              <td>UNIT OF MEASURMENT</td>
+              <th>{{drgObject.measurementUnit}}</th>
+              <td>ROUTE CARD NUMBER</td>
+              <th colspan="1">{{routeObj.cardNo}}</th>
+
+
 
             </tr>
 
+            <tr>
+
+
+              <td >PURCHASE ORDER NUMBER</td>
+              <th colspan="2">{{marketData.poNo}}</th>
+              <td colspan="2">Inspection Date</td>
+              <th colspan="5"></th>
+
+            </tr>
           </table>
         </td>
       </tr>
@@ -211,6 +257,33 @@
                   <td></td>
                   <td></td>
                 </tr>
+                
+              </table>
+              <table class="tb" style="width: 100%;   ">
+                <tr class="noBorder">
+                  <td  colspan="13"  >Remarks:-</td> 
+                  
+              </tr>
+              <tr  class="noBorder">
+                  <td colspan="13" ></td>
+              </tr>
+                <tr >
+
+                  <td colspan="13">Status
+                      <input type="checkbox" style="margin-left: 200px;" id="status1" name="accept" value="accept">
+                      &nbsp;&nbsp;<label for="status1"> ACCEPTED</label>
+                      <input type="checkbox" style="margin-left: 100px;" id="status2" name="caaccept" value="caaccept">
+                      &nbsp;&nbsp;<label for="status1"> C/A ACCEPTED</label>
+                      <input type="checkbox" style="margin-left: 100px;" id="status3" name="reject" value="reject">
+                      &nbsp;&nbsp;<label for="status3"> REJECTED</label>
+                  </td>
+              </tr>
+              <tr >
+                  <td  colspan="3">Inspected By</td>
+                  <td style=" width: 25%;"></td>
+                  <td colspan="3">Approved By</td>
+                  <td style=" width: 25%;"></td>
+              </tr>
               </table>
             </div>
 
