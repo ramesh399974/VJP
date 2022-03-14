@@ -26,20 +26,21 @@
             </ng-container>
             <ng-container *ngIf="!fircheck">
                 <mat-tab-group>
-                    <mat-tab *ngIf="opnValue==20 || opnValue==30 || opnValue==40 || opnValue==50 || opnValue==60 || opnValue==70 || opnValue==80 || opnValue==90 || opnValue==100 || opnValue==110 || opnValue==120 || opnValue==130 || opnValue==140 || opnValue==150 || opnValue==160 || opnValue==170" label="Drg Details ">
+                    <mat-tab *ngIf=" (topnValue==10 || opnValue==20 || opnValue==30 || opnValue==40 || opnValue==50 || opnValue==60 || opnValue==70 || opnValue==80 || opnValue==90 || opnValue==100 || opnValue==110 || opnValue==120 || opnValue==130 || opnValue==140 || opnValue==150 || opnValue==160 || opnValue==170 || opnValue==180 || opnValue==190 || opnValue==200 || opnValue==210 || processCheck)" label="Drg Details ">
                         <app-drg-details> </app-drg-details>
                     </mat-tab>
-                    <mat-tab  *ngIf="type==1 && (opnValue==30 || opnValue==40 || opnValue==50 || opnValue==60 || opnValue==70 || opnValue==80 || opnValue==90 || opnValue==100 || opnValue==110 || opnValue==120 || opnValue==130 || opnValue==140 || opnValue==150 || opnValue==160 || opnValue==170)" label="In Process Inpection">
+                    <mat-tab  *ngIf="(opnValue==10 || opnValue==20 || opnValue==30 || opnValue==40 || opnValue==50 || opnValue==60 || opnValue==70 || opnValue==80 || opnValue==90 || opnValue==100 || opnValue==110 || opnValue==120 || opnValue==130 || opnValue==140 || opnValue==150 || opnValue==160 || opnValue==170 || opnValue==180 || opnValue==190 || opnValue==200 || opnValue==210 || processCheck)" label="In Process Inpection">
                         <app-firstpart-print></app-firstpart-print>
                         <!-- <app-firstpart></app-firstpart> -->
                         <!-- <app-inprocess></app-inprocess> -->
                      </mat-tab>
-                     <mat-tab *ngIf="type==2 && (opnValue==30 || opnValue==40 || opnValue==50 || opnValue==60 || opnValue==70 || opnValue==80 || opnValue==90 || opnValue==100 || opnValue==110 || opnValue==120 || opnValue==130 || opnValue==140 || opnValue==150 || opnValue==160 || opnValue==170)" label="FP Inpection">
-                        <app-inprocess></app-inprocess>
+                      <!-- <mat-tab *ngIf="(opnValue==10 || opnValue==30 || opnValue==40 || opnValue==50 || opnValue==60 || opnValue==70 || opnValue==80 || opnValue==90 || opnValue==100 || opnValue==110 || opnValue==120 || opnValue==130 || opnValue==140 || opnValue==150 || opnValue==160 || opnValue==170)" label="FP Inpection">
+                        <app-inprocess></app-inprocess> 
+                    </mat-tab>  -->
                         <!-- <app-firstpart></app-firstpart> -->
                         <!-- <app-inprocess></app-inprocess> -->
-                     </mat-tab>
-                    <mat-tab *ngIf="opnValue==40 || opnValue==50 || opnValue==70 || opnValue==80 || opnValue==90 || opnValue==110 || opnValue==140 || opnValue==150 || opnValue==160" label="Periodic Inspection">
+                      
+                    <mat-tab *ngIf="opnValue==50 || opnValue==60 || opnValue==70 || opnValue==80 || opnValue==90 || opnValue==100 || opnValue==110  || opnValue==150 || opnValue==180 || opnValue==190 || opnValue==200 || opnValue==210 || processCheck" label="Periodic Inspection ">
                         <app-periodic></app-periodic>
                     </mat-tab> 
                     <!-- <mat-tab *ngIf="opnValue==70" label="Casting First Inspection">

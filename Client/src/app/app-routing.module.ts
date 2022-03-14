@@ -44,6 +44,7 @@ import { QpapprovalDrawingTableComponent } from './qpapproval-drawing-table/qpap
 import { ProductCharacteristicsComponent } from './master/product-characteristics/product-characteristics.component';
 import { ProcessCharacteristicsComponent } from './master/process-characteristics/process-characteristics.component';
 import { IncomingSourceComponent } from './master/incoming-source/incoming-source.component';
+import { ProcessTolComponent } from './master/process-tol/process-tol.component';
 
 const appRoutes: Routes = [
   {
@@ -147,6 +148,12 @@ const appRoutes: Routes = [
   {
     path: 'master/castingtol',
     component: CastingTolComponent,
+    canActivate: [AuthGuardService]
+  },
+
+  {
+    path: 'master/processtol',
+    component: ProcessTolComponent,
     canActivate: [AuthGuardService]
   },
 

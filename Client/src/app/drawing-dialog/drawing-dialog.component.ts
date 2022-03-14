@@ -26,6 +26,7 @@ export class DrawingDialogComponent {
   castToldata: any;
   machineToldata: any;
   splProdata: any;
+  processToldata: any;
 
 
 
@@ -44,8 +45,9 @@ export class DrawingDialogComponent {
 
     this.getmaterial();
     this.getHeatTreatment();
-    this.getCastingTolerance();
-    this.getMachiningTolerance();
+    // this.getCastingTolerance();
+    // this.getMachiningTolerance();
+    this.getProcessTolerance();
     this.getSpecialProcess();
 
     if (this.action === 'edit') {
@@ -92,8 +94,9 @@ export class DrawingDialogComponent {
         castWeight: _data.data.castWeight,
         machineWeight: _data.data.machineWeight,
         heatTreatmentCycle: _data.data.heatTreatmentCycle,
-        castingToleranceStandard: _data.data.castingToleranceStandard,
-        machiningToleranceStandard: _data.data.machiningToleranceStandard,
+        // castingToleranceStandard: _data.data.castingToleranceStandard,
+        // machiningToleranceStandard: _data.data.machiningToleranceStandard,
+        processToleranceStandard: _data.data.processToleranceStandard,
         measurementUnit: _data.data.measurementUnit,
         // specialProcess: _data.data.specialProcess,
         specialInstruction: _data.data.specialInstruction,
@@ -140,21 +143,31 @@ export class DrawingDialogComponent {
 
   }
 
-  getCastingTolerance() {
+  // getCastingTolerance() {
 
-    this._drawing.getCastingTolerance().subscribe((res: any) => {
+  //   this._drawing.getCastingTolerance().subscribe((res: any) => {
+  //     if (res.success) {
+  //       this.castToldata = res.data;
+  //     }
+  //   });
+
+  // }
+
+  // getMachiningTolerance() {
+
+  //   this._drawing.getMachiningTolerance().subscribe((res: any) => {
+  //     if (res.success) {
+  //       this.machineToldata = res.data;
+  //     }
+  //   });
+
+  // }
+
+  getProcessTolerance() {
+
+    this._drawing.getProcessTolerance().subscribe((res: any) => {
       if (res.success) {
-        this.castToldata = res.data;
-      }
-    });
-
-  }
-
-  getMachiningTolerance() {
-
-    this._drawing.getMachiningTolerance().subscribe((res: any) => {
-      if (res.success) {
-        this.machineToldata = res.data;
+        this.processToldata = res.data;
       }
     });
 
@@ -268,8 +281,9 @@ export class DrawingDialogComponent {
     castWeight: ['', Validators.required],
     machineWeight: ['', Validators.required],
     heatTreatmentCycle: ['', Validators.required],
-    castingToleranceStandard: ['', Validators.required],
-    machiningToleranceStandard: ['', Validators.required],
+    // castingToleranceStandard: ['', Validators.required],
+    // machiningToleranceStandard: ['', Validators.required],
+    processToleranceStandard: ['', Validators.required],
     measurementUnit: ['', Validators.required],
     fpi: [],
     radiographyTest:[],

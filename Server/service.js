@@ -2,7 +2,7 @@ var Service = require('node-windows').Service;
 
 // Create a new service object
 var svc = new Service({
-  name:'VJP Server',
+  name:'VJP Server1',
   description: 'VJP',
   script: 'C:\\xampp\\htdocs\\VJP-Quality-Module\\Server\\app.js'
 });

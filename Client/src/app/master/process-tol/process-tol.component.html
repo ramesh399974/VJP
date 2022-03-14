@@ -5,10 +5,11 @@
       </span>
     </button>
     <img style="margin-right: 2%;" src="assets/vjp3.png" height="50" alt="vjp" width="100">
-    <h3 style="color: white;">Process&nbsp;characteristics</h3>&nbsp; &nbsp; &nbsp;
+    <h3 style="color: white;">Process&nbsp;Tolerance </h3>&nbsp; &nbsp; &nbsp;
     <button  mat-raised-button selected style="cursor:pointer;" style="background-color: rgb(238, 20, 20); color: white; width: 150px;" [routerLink]="['/qpapproval-drawingtable']">QP Approval</button>
   
   </app-navbar>
+  
   
   <mat-sidenav-container>
     <mat-sidenav style="width:15%;background-color: black;" mode="over" [opened]="isOpen">
@@ -35,36 +36,37 @@
           <a class="nav-link" [routerLink]="['/master/material']" (click)="isShown = false">Material</a>
         </li>
          <!-- <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/master/castingtol']" (click)="isShown = false">Casting Tolerance</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/master/machinetol']" (click)="isShown = false">Machine Tolerance</a>
-      </li> -->
-
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/master/processtol']" (click)="isShown = false">Process Tolerance</a>
-      </li>
+            <a class="nav-link" [routerLink]="['/master/castingtol']" (click)="isShown = false">Casting Tolerance</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/master/machinetol']" (click)="isShown = false">Machine Tolerance</a>
+          </li> -->
+    
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/master/processtol']" (click)="isShown = false">Process Tolerance</a>
+          </li>
   
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/master/heattreat']" (click)="isShown = false">Heat Treatment</a>
-        </li>
+        </li> 
   
-        <li class="nav-item ">
+        <li class="nav-item">
           <a class="nav-link" [routerLink]="['/master/specialpro']" (click)="isShown = false">Special Process</a>
         </li>
-  
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/master/Productcharacteristics']" (click)="isShown = false">Product characteristics</a>
         </li>
   
-        <li class="nav-item active ">
+        <li class="nav-item ">
           <a class="nav-link" [routerLink]="['/master/Processcharacteristics']" (click)="isShown = false">Process characteristics</a>
         </li>
   
         <li class="nav-item ">
           <a class="nav-link" [routerLink]="['/master/Incomingsource']" (click)="isShown = false">Incoming source</a>
         </li>
+  
+  
       </ul>
   
   
@@ -81,12 +83,12 @@
           <div class="mat-elevation-z8">
             <table mat-table [dataSource]="dataSource">
               <ng-container matColumnDef="id">
-                <th mat-header-cell *matHeaderCellDef> S/N </th>
+                <th mat-header-cell *matHeaderCellDef> S/N</th>
                 <td mat-cell *matCellDef="let drg ; let rIndex = index;"> {{rIndex+1}} </td>
               </ng-container>
   
               <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef>Process characteristics </th>
+                <th mat-header-cell *matHeaderCellDef>Process Tolerance Standard </th>
                 <td mat-cell *matCellDef="let drg"> {{drg.name}} </td>
               </ng-container>
   
@@ -122,8 +124,6 @@
   
         </div>
       </div>
-  
-  
     </mat-sidenav-content>
   </mat-sidenav-container>
   <app-footer></app-footer>

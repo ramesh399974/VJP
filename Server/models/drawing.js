@@ -82,6 +82,10 @@ module.exports = function (sequelize, DataTypes) {
             type:DataTypes.STRING(250),
             field:'machining_tolerance_standard',
         },
+        processToleranceStandard:{
+            type:DataTypes.STRING(255),
+            field:'process_tolerance_standard',
+        },
         measurementUnit:{
             type:DataTypes.STRING(250),
             field:'measurement_unit',

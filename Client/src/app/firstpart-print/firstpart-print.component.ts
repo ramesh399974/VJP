@@ -18,8 +18,10 @@ export class FirstpartPrintComponent implements OnInit {
   mObject: any;
   marketData: any;
   myDate = new Date();
-
+  title : any;
   temp :any;
+  opnValue: any;
+  type: string;
 
   constructor(private _inspectionservice: InspectionService, private router: Router) { }
 
@@ -39,6 +41,17 @@ export class FirstpartPrintComponent implements OnInit {
     this.getmarket(this.routeObj)
     formatDate(new Date(), 'yyyy/MM/dd', 'en');
 
+    this.opnValue = localStorage.getItem('opnValue');
+
+    if(this.opnValue==10 || this.opnValue==30  ){
+      this.title = 'INCOMING INSPECTION REPORT';
+    }else if(this.opnValue==20){
+      this.title = 'INPROCESS INSPECTION REPORT';
+    }else{
+      this.title = 'FIRST PART / INPROCESS INSPECTION REPORT';
+    }
+
+    this.type = localStorage.getItem('type');
 
   }
 
@@ -71,17 +84,19 @@ export class FirstpartPrintComponent implements OnInit {
 
 .tg .tg-cly1 {
     text-align: left;
-    vertical-align: middle
+    vertical-align: middle;
 }
 .tg .tg-nr{
   width:15%;
 }
+
+
 .tg .tg-nrix {
     text-align:center;
     vertical-align: middle;
   
 }
-.mt-4 . tg-cly1 {
+.mt-4 .tg-cly1 {
   width: 1px;
 }
 

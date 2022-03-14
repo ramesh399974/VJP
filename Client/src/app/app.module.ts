@@ -137,6 +137,8 @@ import { DieStartupComponent } from './sheets/pouring/die-startup/die-startup.co
 import { ProcessVerificationComponent } from './sheets/pouring/process-verification/process-verification.component';
 import { InprocessComponent } from './inprocess/inprocess.component';
 import { FilmRadioExamReportComponent } from './sheets/rt-inspection/film-radio-exam/film-radio-exam-report.component';
+import { ProcessTolComponent } from './master/process-tol/process-tol.component';
+import { ProcessTolDialogComponent } from './master/process-tol/process-tol-dialog/process-tol-dialog.component';
 
 
 
@@ -243,7 +245,9 @@ import { FilmRadioExamReportComponent } from './sheets/rt-inspection/film-radio-
     DieStartupComponent,
     ProcessVerificationComponent,
     InprocessComponent,
-    FilmRadioExamReportComponent
+    FilmRadioExamReportComponent,
+    ProcessTolComponent,
+    ProcessTolDialogComponent
     
     ],
   imports: [

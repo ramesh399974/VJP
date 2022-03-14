@@ -24,6 +24,7 @@ models.Material = sequelize.import('./material')
 models.MarketCard = sequelize.import('./marketcard')
 
 models.MachiningToleranceStandard = sequelize.import('./machiningtolerance')
+models.ProcessToleranceStandard = sequelize.import('./processtolerance')
 models.CastingToleranceStandard = sequelize.import('./castingtolerance')
 models.HeatTreatmentCycle = sequelize.import('./heattreatment')
 models.SpecialProcess = sequelize.import('./specialprocess')

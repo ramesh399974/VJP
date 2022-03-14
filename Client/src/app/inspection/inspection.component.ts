@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class InspectionComponent implements OnInit {
   type: any;
+  processCheck: boolean;
 
   constructor(private router: Router) { }
 
@@ -26,6 +27,11 @@ export class InspectionComponent implements OnInit {
     this.fircheck;
     this.opnValue = localStorage.getItem('opnValue');
     this.type = localStorage.getItem('type');
+
+    if(this.opnValue>210)
+    {
+      this.processCheck = true;
+    }
   }
 
 

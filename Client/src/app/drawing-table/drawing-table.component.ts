@@ -77,7 +77,7 @@ export class DrawingTableComponent implements OnInit {
       status = localStorage.getItem('adminLogRole');
     }
     this.checkrole(status);
-    if (status == 'ope' || status == 'disp') {
+    if (status == 'ope' || status == 'disp' || (localStorage.getItem('role')=='NA' && this.isDIS)) {
       this.isad = false;
     }
 

@@ -10,7 +10,7 @@
                     height="50" width="120"></th>
                 <td
                   style=" text-align: center;  border: 1px solid black; border-collapse: collapse; padding: 2px;font-size: 100%;"
-                  rowspan="4" colspan="6"><B> FIRST PART / INPROCESS INSPECTION REPORT</B></td>
+                  rowspan="4" colspan="6"><B>{{title}}</B></td>
                 <td colspan="1" style="  border: 1px solid black; border-collapse: collapse; padding: 2px;">
                   DOC.NO
                 </td>
@@ -173,7 +173,7 @@
                       <td class="tg-y0n7"><b>5</b></td>
                     </tr>
                   </THEAD>
-                  <td class="tg-cly1" style="height: 25px;" colspan="7"> P.SERIAL NO :</td>
+                  <td class="tg-cly1" style="height: 35px;" colspan="7"> P.SERIAL NO :</td>
                   <td class="tg-cly1"></td>
                   <td class="tg-cly1"></td>
                   <td class="tg-cly1"></td>
@@ -195,7 +195,7 @@
                       <td class="tg-cly1"> {{element.instrument |uppercase}} </td>
   
                       <td class="tg-cly1"> {{element.remarks}} </td>
-                      <td class="tg-cly1"></td>
+                      <td class="tg-cly1" style="height: 60px;"></td>
                       <td class="tg-cly1"></td>
                       <td class="tg-cly1"></td>
                       <td class="tg-cly1"></td>
@@ -264,8 +264,11 @@
                     <td  colspan="13"  >Remarks:-</td> 
                     
                 </tr>
-                <tr  class="noBorder">
-                    <td colspan="13" ></td>
+                <tr *ngIf="opnValue==10" class="noBorder">
+                  <td colspan="13" style="padding-left: 100px;">ADD SUPPLIER COC & SPECTRO REPORT</td>
+                </tr>
+                <tr *ngIf="opnValue==60" class="noBorder">
+                  <td colspan="13" style="padding-left: 100px;">ADD SPECTRO REPORT</td>
                 </tr>
                   <tr >
   

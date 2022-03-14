@@ -14,6 +14,7 @@ import {formatDate, DatePipe} from '@angular/common';
   styleUrls: ['./periodic.component.css']
 })
 export class PeriodicComponent implements OnInit {
+  type: string;
 
   constructor(private _inspectionservice: InspectionService, private router: Router) { }
   drgcode: any;
@@ -49,6 +50,7 @@ export class PeriodicComponent implements OnInit {
     this.d_from = localStorage.getItem('qty_from');
     let opnId = localStorage.getItem('opnNo')
     this.machine = localStorage.getItem('machine')
+    this.type = localStorage.getItem('type');
     this.getpi(myItem1, opnId);
     this.drgObject = JSON.parse(localStorage.getItem('drgObject'));
     this.qpaObject = JSON.parse(localStorage.getItem('qpaObject'));
@@ -143,7 +145,7 @@ td {
 }
 .bor{
 
-  height:25px ;
+  height:50px ;
   text-align: left;
   word-break: break-word;
  }

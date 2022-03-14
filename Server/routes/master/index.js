@@ -14,6 +14,7 @@ router.use('/material', require('./material'))
 router.use('/castingtol', require('./castingtolerance'))
 router.use('/heat', require('./heattreatment'))
 router.use('/machinetol', require('./machiningtolerance'))
+router.use('/processtol', require('./processtol'))
 router.use('/specialpro', require('./specialprocess'))
 
 

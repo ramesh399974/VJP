@@ -20,6 +20,8 @@ export class InprocessComponent implements OnInit {
   myDate = new Date();
 
   temp :any;
+  opnValue: any;
+  title: string;
 
   constructor(private _inspectionservice: InspectionService, private router: Router) { }
 
@@ -39,6 +41,15 @@ export class InprocessComponent implements OnInit {
     this.getmarket(this.routeObj)
     formatDate(new Date(), 'yyyy/MM/dd', 'en');
 
+    this.opnValue = localStorage.getItem('opnValue');
+
+    if(this.opnValue==10 || this.opnValue==30 ){
+      this.title = 'INCOMING INSPECTION REPORT';
+    }else if(this.opnValue==20){
+      this.title = 'INPROCESS INSPECTION REPORT';
+    }else{
+      this.title = 'FIRST PART / INPROCESS INSPECTION REPORT';
+    }
 
   }
 

@@ -69,12 +69,17 @@ export class DrawingService {
     return this.http.get(this.API_URL+'/api/master/heat',{ headers: { Authorization: `Bearer ${this.getToken()}` } }).pipe(
       map(this.extractData1));
   }
-  getCastingTolerance(): Observable<any> {
-    return this.http.get(this.API_URL+'/api/master/castingtol',{ headers: { Authorization: `Bearer ${this.getToken()}` } }).pipe(
-      map(this.extractData1));
-  }
-  getMachiningTolerance(): Observable<any> {
-    return this.http.get(this.API_URL+'/api/master/machinetol',{ headers: { Authorization: `Bearer ${this.getToken()}` } }).pipe(
+  // getCastingTolerance(): Observable<any> {
+  //   return this.http.get(this.API_URL+'/api/master/castingtol',{ headers: { Authorization: `Bearer ${this.getToken()}` } }).pipe(
+  //     map(this.extractData1));
+  // }
+  // getMachiningTolerance(): Observable<any> {
+  //   return this.http.get(this.API_URL+'/api/master/machinetol',{ headers: { Authorization: `Bearer ${this.getToken()}` } }).pipe(
+  //     map(this.extractData1));
+  // }
+
+  getProcessTolerance(): Observable<any> {
+    return this.http.get(this.API_URL+'/api/master/processtol',{ headers: { Authorization: `Bearer ${this.getToken()}` } }).pipe(
       map(this.extractData1));
   }
   getSpecialProcess(): Observable<any> {

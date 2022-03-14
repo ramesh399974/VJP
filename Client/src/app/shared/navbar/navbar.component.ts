@@ -65,6 +65,7 @@ export class NavbarComponent implements OnInit {
       path == "master/instrument" ||
       path == "master/castingtol" ||
       path == "master/machinetol" ||
+      path == "master/processtol" ||
       path == "master/heattreat" ||
       path == "master/specialpro"||
       path == "master/Incomingsource"||

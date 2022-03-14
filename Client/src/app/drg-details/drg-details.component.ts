@@ -15,6 +15,7 @@ export class DrgDetailsComponent implements OnInit {
   routeObj :any;
   marketData:any;
   myDate = new Date();
+  type: string;
   
   constructor(private _inspectionservice: InspectionService) { }
 
@@ -27,6 +28,8 @@ export class DrgDetailsComponent implements OnInit {
     this.routeObj = JSON.parse(localStorage.getItem('routeObj'));
     this.getmarket()
     formatDate(new Date(), 'yyyy/MM/dd', 'en');
+
+    this.type = localStorage.getItem('type');
 
   }
   getmarket() {
